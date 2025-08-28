@@ -38,13 +38,6 @@ I practice by building small, meaningful things and sharing progress publicly. M
 ---
 
 ## 🤝 Let’s Connect  
-- [LinkedIn](https://www.linkedin.com/in/michael-frimpong-3a1b52375)  
-- [X (Twitter)](https://x.com/krayetor)  
-- [Email](mailto:hellokrayetor@gmail.com)  
-
----
-
-## 🤝 Let’s Connect  
 
 <p align="left">
   <a href="https://www.linkedin.com/in/michael-frimpong-3a1b52375">
