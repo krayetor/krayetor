@@ -44,4 +44,20 @@ I practice by building small, meaningful things and sharing progress publicly. M
 
 ---
 
+## 🤝 Let’s Connect  
+
+<p align="left">
+  <a href="https://www.linkedin.com/in/michael-frimpong-3a1b52375">
+    <img src="https://img.shields.io/badge/LinkedIn-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white" />
+  </a>
+  <a href="https://x.com/krayetor">
+    <img src="https://img.shields.io/badge/Twitter(X)-%23000000.svg?&style=for-the-badge&logo=x&logoColor=white" />
+  </a>
+  <a href="mailto:hellokrayetor@gmail.com">
+    <img src="https://img.shields.io/badge/Email-%23D14836.svg?&style=for-the-badge&logo=gmail&logoColor=white" />
+  </a>
+</p>
+
+---
+
 ✨ Thanks for visiting my profile — I’m open to collaborations, mentorship, and beginner-friendly projects!
