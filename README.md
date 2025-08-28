@@ -92,7 +92,7 @@
   <h2>🤝 Let's Connect</h2>
   <p>
     <a href="www.linkedin.com/in/michael-frimpong-3a1b52375">LinkedIn</a> •
-    <a href="[https://x.com/krayetor">X (Twitter)</a> •
+    <a href="[https://x.com/krayetor">X(Twitter)</a> •
     <a href="mailto:hellokrayetor@gmail.com">Email</a>
   </p>
 
