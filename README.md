@@ -11,7 +11,7 @@
 
 ## 🌱 About Me  
 I’m a curious learner on a growth journey — training with **ALX Frontend Web Development** and exploring **content creation** and **AI career essentials**.  
-I believe being a beginner is a strength: I share what I learn, build small projects, and grow step by step.  
+Being a beginner is a strength: I share what I learn, build small projects, and grow step by step.  
 
 **What inspires me:** empowering young people — especially Africans — with practical, creative, and accessible tech skills.  
 **My vision:** become a versatile frontend developer & UX creator who builds polished, user-friendly web experiences and learning tools.  
@@ -29,7 +29,6 @@ I believe being a beginner is a strength: I share what I learn, build small proj
 ---
 
 ## 🚀 Projects & Showcases  
-*(Replace with your links when ready)*  
 - **Portfolio Website** — a dark-mode, neon-accent site showcasing design + frontend experiments.  
 - **UI Component Library** — reusable buttons, cards, and navbars built while learning Framer.  
 - **Learning Mini-App** — a tiny web app that explains one frontend concept interactively.  
