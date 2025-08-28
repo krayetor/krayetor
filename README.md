@@ -28,14 +28,6 @@ Being a beginner is a strength: I share what I learn, build small projects, and 
 
 ---
 
-## 🚀 Projects & Showcases  
-- **Portfolio Website** — a dark-mode, neon-accent site showcasing design + frontend experiments.  
-- **UI Component Library** — reusable buttons, cards, and navbars built while learning Framer.  
-- **Learning Mini-App** — a tiny web app that explains one frontend concept interactively.  
-- **Content Playlist** — short videos documenting my learning journey and tips for beginners.  
-
----
-
 ## 📚 How I Learn  
 I practice by building small, meaningful things and sharing progress publicly. My loop:  
 1. Pick one small feature or concept  
