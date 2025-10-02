@@ -2,8 +2,8 @@
      GitHub README — Clean Beginner Version
      ========================= -->
 
-<h1 align="center">Hi, I'm Frimpong Michael👋</h1>
-<p align="center">
+<h1 align="left">Hi, I'm Frimpong Michael👋</h1>
+<p align="left">
   <em>ALX Frontend Learner • Aspiring Security-focused Dev</em>
 </p>
 
