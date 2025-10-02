@@ -4,7 +4,7 @@
 
 <h1 align="center">Hi, I'm Frimpong Michael👋</h1>
 <p align="center">
-  <em>ALX Frontend Learner • Aspiring Frontend Engineer •  Aspiring Content Creator</em>
+  <em>ALX Frontend Learner • Aspiring Security-focused Dev</em>
 </p>
 
 <hr/>
@@ -14,7 +14,7 @@ I’m a curious learner on a growth journey — training with **ALX Frontend Web
 Being a beginner is a strength: I share what I learn, build small projects, and grow step by step.  
 
 **What inspires me:** empowering young people — especially Africans — with practical, creative, and accessible tech skills.  
-**My vision:** become a versatile frontend developer & UX creator who builds polished, user-friendly web experiences and learning tools.  
+**My vision:** become a versatile Security-focused developer, user-friendly web experiences and learning tools.  
 **I enjoy working on:** portfolio websites, responsive UI components, design systems, and beginner-friendly learning resources.  
 
 ---
