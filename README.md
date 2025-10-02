@@ -53,4 +53,4 @@ I practice by building small, meaningful things and sharing progress publicly. M
 
 ---
 
-✨ Thanks for visiting my profile — I’m open to collaborations, mentorship, and beginner-friendly projects!
+✨ Thanks for visiting my profile. I’m open to collaborations, mentorship, and beginner-friendly projects!
