@@ -10,10 +10,10 @@
 <hr/>
 
 ## 🌱 About Me  
-I’m a curious learner on a growth journey — training with **ALX Frontend Web Development** and exploring **content creation** and **AI career essentials**.  
+I’m a curious learner on a growth journey, training with **ALX Frontend Web Development** and exploring **content creation** and **AI career essentials**.  
 Being a beginner is a strength: I share what I learn, build small projects, and grow step by step.  
 
-**What inspires me:** empowering young people — especially Africans — with practical, creative, and accessible tech skills.  
+**What inspires me:** Empowering young people, especially Africans, with practical, creative, and accessible tech skills.  
 **My vision:** become a versatile Security-focused developer, user-friendly web experiences and learning tools.  
 **I enjoy working on:** portfolio websites, responsive UI components, design systems, and beginner-friendly learning resources.  
 
