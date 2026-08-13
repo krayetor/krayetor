@@ -1,56 +1,176 @@
-<!-- =========================
-     GitHub README — Clean Beginner Version
-     ========================= -->
+<div align="center">
 
-<h1 align="left">Hi, I'm Frimpong Michael👋</h1>
-<p align="left">
-  <em>ALX Frontend Learner • Aspiring Security-focused Dev</em>
-</p>
+KRAYETOR
 
-<hr/>
+DESIGN · BUILD · EXPERIMENT · UNDERSTAND
 
-## 🌱 About Me  
-I’m a curious learner on a growth journey, training with **ALX Frontend Web Development** and exploring **content creation** and **AI career essentials**.  
-Being a beginner is a strength: I share what I learn, build small projects, and grow step by step.  
+[ currently building ] · [ exploring ] · [ learning ]
 
-**What inspires me:** Empowering young people, especially Africans, with practical, creative, and accessible tech skills.  
-**My vision:** become a versatile Security-focused developer, user-friendly web experiences and learning tools.  
-**I enjoy working on:** portfolio websites, responsive UI components, design systems, and beginner-friendly learning resources.  
+</div>
 
----
+01 / SIGNAL
 
-## 🛠️ Skills & Tools  
-- **Frontend:** HTML, CSS, JavaScript basics, responsive layouts  
-- **Design / UI:** Figma, Framer basics, prototyping  
-- **Tools:** Git, VS Code, Chrome DevTools  
-- **Learning areas:** C++ basics, cybersecurity fundamentals, AI career essentials  
-- **Content:** short-form educational content, video editing basics (CapCut / VN / DaVinci)  
+[ Write one strong sentence that describes who you are. ]
 
----
+[ Add 1–2 lines about your interests, mindset, or what you enjoy building. ]
 
-## 📚 How I Learn  
-I practice by building small, meaningful things and sharing progress publicly. My loop:  
-1. Pick one small feature or concept  
-2. Prototype it (Figma / Framer)  
-3. Build it with HTML/CSS/JS  
-4. Share what I learned  
+02 / CURRENT STATE
 
----
+<table>
+<tr>
+<td bgcolor="#111827">
 
-## 🤝 Let’s Connect  
+┌──────────────────────────────────────────────────┐
+│ STATUS                                           │
+│                                                  │
+│ ● Building      [ What you're building ]         │
+│ ● Learning      [ What you're learning ]         │
+│ ● Exploring     [ What you're exploring ]        │
+│ ● Experimenting [ Something you're testing ]     │
+│                                                  │
+└──────────────────────────────────────────────────┘
 
-<p align="left">
-  <a href="https://www.linkedin.com/in/michael-frimpong-3a1b52375">
-    <img src="https://img.shields.io/badge/LinkedIn-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white" />
-  </a>
-  <a href="https://x.com/krayetor">
-    <img src="https://img.shields.io/badge/Twitter(X)-%23000000.svg?&style=for-the-badge&logo=x&logoColor=white" />
-  </a>
-  <a href="mailto:hellokrayetor@gmail.com">
-    <img src="https://img.shields.io/badge/Email-%23D14836.svg?&style=for-the-badge&logo=gmail&logoColor=white" />
-  </a>
-</p>
+</td>
+</tr>
+</table>
 
----
+[ Update this section as your current focus changes. ]
 
-✨ Thanks for visiting my profile. I’m open to collaborations, mentorship, and beginner-friendly projects!
+03 / THE TOOLBOX
+
+DESIGN
+
+[ Tool ] [ Tool ] [ Skill ] [ Skill ]
+
+TECH
+
+[ Language ] [ Tool ] [ OS ] [ Tool ]
+
+EXPLORING
+
+[ Topic ] [ Topic ] [ Topic ]
+
+04 / SELECTED WORK
+
+A few things I've built, designed, explored, or experimented with.
+
+<table>
+<tr>
+<td bgcolor="#111827">
+
+┌───────────────────────────────┐
+│ [ PROJECT NAME ]              │
+│                               │
+│ [ Short project description ] │
+│                               │
+│ [ VIEW PROJECT → ]            │
+└───────────────────────────────┘
+
+</td>
+<td bgcolor="#111827">
+
+┌───────────────────────────────┐
+│ [ PROJECT NAME ]              │
+│                               │
+│ [ Short project description ] │
+│                               │
+│ [ VIEW PROJECT → ]            │
+└───────────────────────────────┘
+
+</td>
+</tr>
+<tr>
+<td colspan="2" bgcolor="#111827">
+
+┌───────────────────────────────┐
+│ [ PROJECT NAME ]              │
+│                               │
+│ [ Short project description ] │
+│                               │
+│ [ VIEW PROJECT → ]            │
+└───────────────────────────────┘
+
+</td>
+</tr>
+</table>
+
+05 / HOW I WORK
+
+<table>
+<tr>
+<td bgcolor="#111827">
+
+IDEA
+  ↓
+EXPLORE
+  ↓
+BUILD
+  ↓
+BREAK
+  ↓
+UNDERSTAND
+  ↓
+REBUILD
+
+</td>
+</tr>
+</table>
+
+[ Add a short statement about how you approach learning, design, or building. ]
+
+06 / CURRENT EXPERIMENT
+
+[ What are you currently trying to figure out? ]
+
+<table>
+<tr>
+<td bgcolor="#111827">
+
+╭──────────────────────────────────────────────╮
+│                                              │
+│  [ PROJECT / IDEA / QUESTION ]               │
+│                                              │
+│  [ A few words about what you're exploring ] │
+│                                              │
+│  [ STATUS: IN PROGRESS ]                     │
+│                                              │
+╰──────────────────────────────────────────────╯
+
+</td>
+</tr>
+</table>
+
+07 / GITHUB SIGNAL
+
+[ Add GitHub stats, contribution graph, streak, or another visual here. ]
+
+<table>
+<tr>
+<td bgcolor="#111827" align="center">
+GitHub Stats
+<br><br>
+`[ IMAGE / CARD ]`
+</td>
+<td bgcolor="#111827" align="center">
+Top Languages
+<br><br>
+`[ IMAGE / CARD ]`
+</td>
+</tr>
+</table>
+
+08 / ELSEWHERE
+
+<div align="center">
+
+[ GitHub ] · [ LinkedIn ] · [ Portfolio ] · [ Email ]
+
+</div>
+
+<div align="center">
+
+KRAYETOR // 2026
+
+[ Your closing line. ]
+
+</div>
