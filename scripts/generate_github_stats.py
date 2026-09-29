@@ -1,0 +1,361 @@
+#!/usr/bin/env python3
+
+import json
+import os
+import urllib.request
+from pathlib import Path
+from xml.sax.saxutils import escape
+
+
+USERNAME = os.environ["krayetor"]
+YEAR = os.environ.get("STATS_YEAR", "2026")
+TOKEN = os.environ.get("GITHUB_TOKEN", "")
+
+API = "https://api.github.com"
+
+HEADERS = {
+    "Accept": "application/vnd.github+json",
+    "X-GitHub-Api-Version": "2022-11-28",
+    "User-Agent": "krayetor-github-stats",
+}
+
+if TOKEN:
+    HEADERS["Authorization"] = f"Bearer {TOKEN}"
+
+
+def get_json(url):
+    request = urllib.request.Request(
+        url,
+        headers=HEADERS
+    )
+
+    with urllib.request.urlopen(request) as response:
+        return json.load(response)
+
+
+# --------------------------------------------------
+# Get repositories
+# --------------------------------------------------
+
+repositories = []
+
+page = 1
+
+while True:
+
+    url = (
+        f"{API}/users/{USERNAME}/repos"
+        f"?per_page=100"
+        f"&page={page}"
+        f"&type=owner"
+    )
+
+    batch = get_json(url)
+
+    if not batch:
+        break
+
+    repositories.extend(batch)
+
+    if len(batch) < 100:
+        break
+
+    page += 1
+
+
+repository_count = len(repositories)
+
+stars = sum(
+    repository.get("stargazers_count", 0)
+    for repository in repositories
+)
+
+
+# --------------------------------------------------
+# Count commits for the selected year
+# --------------------------------------------------
+
+start_date = f"{YEAR}-01-01T00:00:00Z"
+end_date = f"{int(YEAR) + 1}-01-01T00:00:00Z"
+
+commit_count = 0
+
+
+for repository in repositories:
+
+    owner = repository["owner"]["login"]
+    name = repository["name"]
+
+    page = 1
+
+    while True:
+
+        url = (
+            f"{API}/repos/{owner}/{name}/commits"
+            f"?author={USERNAME}"
+            f"&since={start_date}"
+            f"&until={end_date}"
+            f"&per_page=100"
+            f"&page={page}"
+        )
+
+        batch = get_json(url)
+
+        if not batch:
+            break
+
+        commit_count += len(batch)
+
+        if len(batch) < 100:
+            break
+
+        page += 1
+
+
+# --------------------------------------------------
+# Generate SVG
+# --------------------------------------------------
+
+output = Path("assets/github_stats_card.svg")
+
+output.parent.mkdir(
+    parents=True,
+    exist_ok=True
+)
+
+
+svg = f'''<svg
+width="760"
+height="170"
+viewBox="0 0 760 170"
+xmlns="http://www.w3.org/2000/svg">
+
+<style>
+
+.title {{
+    fill: #24292f;
+}}
+
+.label {{
+    fill: #57606a;
+}}
+
+.value {{
+    fill: #24292f;
+}}
+
+.card {{
+    fill: #ffffff;
+    stroke: #d0d7de;
+}}
+
+.divider {{
+    stroke: #d8dee4;
+}}
+
+.octocat {{
+    fill: #24292f;
+}}
+
+@media (prefers-color-scheme: dark) {{
+
+    .title {{
+        fill: #f0f6fc;
+    }}
+
+    .label {{
+        fill: #8b949e;
+    }}
+
+    .value {{
+        fill: #f0f6fc;
+    }}
+
+    .card {{
+        fill: #0d1117;
+        stroke: #30363d;
+    }}
+
+    .divider {{
+        stroke: #21262d;
+    }}
+
+    .octocat {{
+        fill: #f0f6fc;
+    }}
+
+}}
+
+</style>
+
+
+<!-- GitHub Mark -->
+
+<g
+class="octocat"
+transform="translate(4 8) scale(1.28)">
+
+<path d="M12 .297c-6.63 0-12 5.373-12 12
+c0 5.303 3.438 9.8 8.205 11.385
+.6.113.82-.258.82-.577
+0-.285-.01-1.04-.015-2.04
+-3.338.724-4.042-1.61-4.042-1.61
+-.546-1.387-1.333-1.756-1.333-1.756
+-1.089-.745.084-.729.084-.729
+1.205.084 1.838 1.236 1.838 1.236
+1.07 1.835 2.809 1.305 3.495.998
+.108-.776.418-1.305.762-1.605
+-2.665-.3-5.466-1.332-5.466-5.93
+0-1.31.465-2.38 1.235-3.22
+-.135-.303-.54-1.523.105-3.176
+0 0 1.005-.322 3.3 1.23
+.957-.266 1.983-.399 3.003-.404
+1.02.005 2.047.138 3.006.404
+2.292-1.552 3.295-1.23 3.295-1.23
+.647 1.653.24 2.873.12 3.176
+.765.84 1.23 1.91 1.23 3.22
+0 4.61-2.805 5.625-5.475 5.92
+.43.372.823 1.103.823 2.222
+0 1.606-.015 2.896-.015 3.286
+0 .32.216.694.825.576
+C20.565 22.092 24 17.592 24 12.297
+c0-6.627-5.373-12-12-12"/>
+
+</g>
+
+
+<!-- Title -->
+
+<text
+x="46"
+y="28"
+class="title"
+font-family="Inter,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif"
+font-size="18"
+font-weight="600">
+
+GitHub Stats
+
+</text>
+
+
+<!-- Main Card -->
+
+<rect
+x="0.5"
+y="51.5"
+width="759"
+height="118"
+rx="16"
+class="card"/>
+
+
+<!-- Repositories -->
+
+<text
+x="127"
+y="84"
+text-anchor="middle"
+class="label"
+font-family="Inter,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif"
+font-size="13">
+
+Repositories
+
+</text>
+
+<text
+x="127"
+y="116"
+text-anchor="middle"
+class="value"
+font-family="Inter,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif"
+font-size="20"
+font-weight="600">
+
+{repository_count}
+
+</text>
+
+
+<!-- Commits -->
+
+<text
+x="380"
+y="84"
+text-anchor="middle"
+class="label"
+font-family="Inter,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif"
+font-size="13">
+
+Commits - {escape(YEAR)}
+
+</text>
+
+<text
+x="380"
+y="116"
+text-anchor="middle"
+class="value"
+font-family="Inter,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif"
+font-size="20"
+font-weight="600">
+
+{commit_count}
+
+</text>
+
+
+<!-- Stars -->
+
+<text
+x="633"
+y="84"
+text-anchor="middle"
+class="label"
+font-family="Inter,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif"
+font-size="13">
+
+Stars
+
+</text>
+
+<text
+x="633"
+y="116"
+text-anchor="middle"
+class="value"
+font-family="Inter,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif"
+font-size="20"
+font-weight="600">
+
+{stars}
+
+</text>
+
+
+<!-- Dividers -->
+
+<path
+d="M253 72 V139"
+class="divider"/>
+
+<path
+d="M506 72 V139"
+class="divider"/>
+
+</svg>
+'''
+
+
+output.write_text(
+    svg,
+    encoding="utf-8"
+)
+
+print(
+    f"Updated GitHub stats: "
+    f"repositories={repository_count}, "
+    f"commits_{YEAR}={commit_count}, "
+    f"stars={stars}"
+)
