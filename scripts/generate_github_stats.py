@@ -7,7 +7,7 @@ from pathlib import Path
 from xml.sax.saxutils import escape
 
 
-USERNAME = os.environ["krayetor"]
+USERNAME = os.environ["GITHUB_USERNAME"]
 YEAR = os.environ.get("STATS_YEAR", "2026")
 TOKEN = os.environ.get("GITHUB_TOKEN", "")
 
