@@ -22,16 +22,13 @@
         width="100%"
       />
     </td>
-
     <td width="38%" valign="top">
       <img
         src="assets/krayetor_current_vibes.svg"
         alt="Current Vibes"
         width="100%"
       />
-
       <br />
-
       <img
         src="assets/github_stats_card.svg"
         alt="GitHub Stats"
